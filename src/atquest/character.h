@@ -1,3 +1,5 @@
+#ifndef CHARACTER_H
+#define CHARACTER_H
 #include "actions.h"
 
 
@@ -14,4 +16,5 @@ class Character{
         int Wis();
         int AC();
 
-}
+};
+#endif /* CHARACTER_H */

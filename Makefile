@@ -8,8 +8,8 @@ export src-dir := $(top-dir)/src
 export bin-dir := $(top-dir)/bin
 
 lib-target := libinfos.a
-tool-targets := init ls shell sched-test1 sched-test2 cat date
-	
+tool-targets := init ls shell sched-test1 sched-test2 cat date atquest
+
 export real-lib-target   := $(bin-dir)/$(lib-target)
 real-tool-targets := $(patsubst %,$(bin-dir)/%,$(tool-targets))
 real-tool-clean-targets := $(patsubst %,__clean__$(bin-dir)/%,$(tool-targets))
